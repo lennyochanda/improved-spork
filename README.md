@@ -1,6 +1,6 @@
-# SvelteKit static blog starter
+# Lenny Ochanda Portfolio Website
 
-This starter contains everything you need to get up and running with [SvelteKit](https://kit.svelte.dev/) as a static site generator for your Markdown (and Svelte)-powered blog. [Check out the demo here](https://sveltekit-static-starter.netlify.app/), or view the [GitHub repo here](https://github.com/josh-collinsworth/sveltekit-blog-starter).
+This is a [SvelteKit](https://kit.svelte.dev/) and MarkDown powered website/blog built on top of [sveltekit-static-blog-starter](https://www.github.com/josh-collinsworth/sveltekit-blog-starter). It contains the following:
 
 ## Features
 
@@ -18,7 +18,7 @@ This starter contains everything you need to get up and running with [SvelteKit]
 
 ## Installation
 
-Clone or download [this repo](https://github.com/josh-collinsworth/sveltekit-blog-starter), then inside of it, in the terminal, run:
+Clone or download [this repo](https://github.com/dak-384/improved-spork), then inside of it, in the terminal, run:
 
 ```
 npm install

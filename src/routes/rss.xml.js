@@ -1,9 +1,9 @@
 // IMPORTANT: update all the property values in this `config` object to reflect your site!
 const config = {
-  siteTitle: 'SvelteKit Static Blog Starter',
-  siteDescription: 'Add a description here',
-  mySiteURL: 'example.com',
-  siteLink: 'https://github.com/josh-collinsworth/sveltekit-blog-starter'
+  siteTitle: 'Lenny Ochanda | Portfolio',
+  siteDescription: 'Portfolio website for Lenny Ochanda',
+  mySiteURL: 'lennyochanda.netlify.app',
+  siteLink: 'https://lennyochanda.netlify.app'
 }
 
 export const get = async () => {  
