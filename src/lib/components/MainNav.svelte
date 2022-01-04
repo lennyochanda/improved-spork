@@ -8,6 +8,9 @@
     <NavItem href="/blog">
       Blog
     </NavItem>
+    <NavItem href="/projects" >
+      Projects
+    </NavItem>
     <NavItem href="/about">
       About
     </NavItem>
