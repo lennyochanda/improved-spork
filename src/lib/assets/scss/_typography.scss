@@ -1,0 +1,83 @@
+html {
+  font-size: 1rem;
+  line-height: 1.6;
+
+  @media (min-width: $smMin) {
+    font-size: 1.125rem;
+  }
+
+  @media (min-width: $lgMin) {
+    font-size: 1.25rem;
+  }
+}
+
+body {
+  font-family: $primaryFont;
+  color: $ink;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 4.5rem 0 1rem;
+  line-height: 1.1;
+  font-family: $accentFont;
+  font-weight: normal;
+  color: $darker;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 0;
+
+  @media (min-width: $smMin) {
+    font-size: 3.4rem;
+  }
+
+  @media (min-width: $lgMin) {
+    font-size: 3.8rem;
+  }
+}
+
+h2 {
+  font-size: 2.1rem;
+  
+  @media (min-width: $smMin) {
+    font-size: 2.4rem;
+  }
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.35rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-decoration-color: $dark;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+
+  ul {
+    list-style-type: circle;
+  }
+
+  ::marker {
+    color: $accent;
+  }
+}

@@ -1,0 +1,94 @@
+*, 
+*:before, 
+*:after {
+  box-sizing: border-box;
+  font-family: inherit;
+  outline: none;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: $darker;
+  background: $background;
+}
+
+main {
+  width: 100%;
+  max-width: 42rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.post {
+  .meta {
+    font-size: 0.8rem;
+    margin-bottom: 4rem;
+  }
+
+  img + h1 {
+    margin-top: 1rem;
+  }
+}
+
+.posts-list {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 6rem;
+  }
+
+  a + h2 {
+    margin-top: 1rem;
+  }
+}
+
+.post-footer { 
+  ul {
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    background-color: $lightAccent;
+    padding: .25rem 0.5rem;
+    text-transform: uppercase;
+    font-family: $primaryFont;
+    font-weight: bold;
+
+    + li {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+:where(h2, h3, h4, h5, h6) {
+  .icon-link {
+    position: relative;
+    
+    &::before {
+      content: '#';
+      position: absolute;
+      left: -1.5ch;
+      top: 0;
+      line-height: 1.2;
+      text-decoration: underline;
+      color: $dark;
+      font-weight: normal;
+    }
+  }
+}
