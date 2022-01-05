@@ -1,5 +1,5 @@
 ---
-title: "Implementing Linear & Binary Search Algorithms in JavaScript."
+title: "Implementing Linear and Binary Search Algorithms in JavaScript."
 date: "2021-12-11"
 updated: "2021-12-11"
 categories: 
@@ -11,7 +11,7 @@ categories:
 coverImage: "/images/blog/computer.jpeg"
 coverWidth: 16
 coverHeight: 9
-excerpt: Implementing two simple Searching algorithms on JavaScript arrays, Linear and Binary Search.
+excerpt: "Implementing two simple Searching algorithms on JavaScript arrays, Linear and Binary Search."
 ---
 
 <script>

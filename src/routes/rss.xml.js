@@ -1,6 +1,6 @@
 // IMPORTANT: update all the property values in this `config` object to reflect your site!
 const config = {
-  siteTitle: 'Lenny Ochanda | Portfolio',
+  siteTitle: 'Lenny Ochanda',
   siteDescription: 'Portfolio website for Lenny Ochanda',
   mySiteURL: 'lennyochanda.netlify.app',
   siteLink: 'https://lennyochanda.netlify.app'
@@ -11,6 +11,7 @@ export const get = async () => {
     Object.entries(import.meta.glob('./blog/*.md')).map(async ([path, page]) => {
       const { metadata } = await page()
       const slug = path.split('/').pop().split('.').shift()
+      console.log(metadata)
       return { ...metadata, slug }
     })
   )
@@ -47,8 +48,7 @@ ${posts
 <description>${post.excerpt}</description>
 <pubDate>${new Date(post.date).toUTCString()}</pubDate>
 </item>`
-  )
-  .join('')}
+  ).join('')}
 </channel>
 </rss>
 `;
