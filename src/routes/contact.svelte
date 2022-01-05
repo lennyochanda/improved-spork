@@ -4,7 +4,7 @@
 
 <h1>Contact</h1>
 
-<p>Reach out to me on the following accounts.</p>
+<p>You can find me on the following social accounts:</p>
 
 <ul>
   <li><a href="https://www.github.com/dak-384">Github</a></li>
@@ -30,5 +30,5 @@
     <textarea id="message" placeholder="Message"></textarea>
   </div>
 
-  <input type="submit" value="Submit!">
+  <button type="submit">Submit!</button>
 </form>

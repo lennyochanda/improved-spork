@@ -2,16 +2,16 @@
 	export let project
 </script>
 
-{#if project && project.slug}
+{#if project}
   <div>
     <div>
       <h3>
-        {project.title}
+        <a href={project.url}>{project.title}</a>
       </h3>
     </div>
     <div>
     	<img
-        alt="{'Lenny Ochanda'}"
+        alt="{project.alt}"
         src="{project.coverImage}"
         width="1.75rem"
         height="1.75rem"
@@ -21,8 +21,10 @@
         {project.description}
       </p>
     </div>
+    <div>
+      {#each project.stack as stack}
+        <span>{stack}</span>
+      {/each}
+    </div>
   </div>
-
-{:else}
-	<p>Projects will appear here...</p>
 {/if}

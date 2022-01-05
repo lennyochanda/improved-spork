@@ -3,10 +3,12 @@
 
 	const projects = [
     {
-      title: 'Taarifa Digital',
-      description: 'An independent online platform for Kenyan Trending news in Entertainment, Politics, Lifestyle and Business. It is built with sveltekit nd styled with TailwindCSS',
-      slug: 'https://taarifa-digital.vercel.app',
+      alt: 'Taarifa Digital website screenshots',
       coverImage: '/images/projects/taarifa.jpeg',
+      description: 'An independent online platform for Kenyan Trending news in Entertainment, Politics, Lifestyle and Business. It is built with sveltekit and styled with TailwindCSS',
+      stack: ['Sveltekit', 'TailwindCSS'],
+      title: 'Taarifa Digital',
+      url: 'https://taarifa-digital.vercel.app',
     },
   ];
 </script>
@@ -15,13 +17,15 @@
 	<h1>Project</h1>
 	<div>
 		<p>
-			Here is a curated list of some of the projecs that I am working on or have worked on.
+			Here is a curated list of some of the projecs that I am working on.
 		</p>
 	</div>
-	{#if projects.length > 0}
+	{#if projects.length}
     {#each projects as project}
             <ProjectCard project="{project}" />
     {/each}
+  {:else}
+  	<p>Projects I have worked on will appear here... </p>
   {/if}
 </div>
 
