@@ -17,7 +17,7 @@ The rest of the course covers Testing, State Management with Redux, Webpack, cus
         
 I would love an opportunity to collaborate in _ReactJS (NextJS), SveltJS (SvelteKit), MERN_ projects and the `JavaScript` eco-system which I find to be very broad && diverse. I will write about the above topics among others so stay tuned! 
 
-Find me on the links below.
+Feel free to reach out to me below.
 
 <script>
 	import Contact from '$lib/components/Contact.svelte'
