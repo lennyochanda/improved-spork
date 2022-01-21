@@ -14,8 +14,5 @@
     <NavItem href="/about">
       About
     </NavItem>
-    <NavItem href="/contact" >
-      Contact
-    </NavItem>
   </ul>
 </nav>
