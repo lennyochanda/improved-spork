@@ -21,17 +21,17 @@
 <form id="contact" name="contact" method="POST" netlify data-netlify="true" netlify-honeypot="bot-field">
   <div class="form-section">
     <label for="name">Name</label>
-    <input type="text" id="name" placeholder="Name" />
+    <input type="text" id="name" name="name" placeholder="Name" />
   </div>
   
   <div class="form-section">
     <label for="email">Email</label>
-    <input type="email" id="email" placeholder="myemailaddress@something.com" />
+    <input type="email" id="email" name="email" placeholder="address@something.com" />
   </div>
 
   <div class="form-section">
     <label for="message">Message</label>
-    <textarea id="message" placeholder="Hi, Lenny..." max-length="250"></textarea>
+    <textarea id="message" name="message" placeholder="Hi, Lenny..." max-length="250"></textarea>
   </div>
 
   <button type="submit">Send!</button>
