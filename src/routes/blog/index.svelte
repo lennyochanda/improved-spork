@@ -12,7 +12,6 @@
 
 <script>
 	export let posts;
-	console.log(posts)
 
 	import PostCard from '$lib/components/PostCard.svelte'
 </script>

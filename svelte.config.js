@@ -47,6 +47,12 @@ const config = {
 		// Default SvelteKit options
 		target: '#svelte',
 		adapter: adapter(),
+		prerender: {
+			crawl: true,
+			enabled: true,
+			onError: "continue",
+			entries: ['*']
+		},
 
 		/**
 		 * This `vite` block is only necessary to load the README file from the root. 

@@ -4,18 +4,6 @@
 
 <script>
   import Callout from "$lib/components/Callout.svelte"
-
-  const handleSubmit = (e) => {
-    let contactForm = document.getElementById('contact');
-    let formData = new FormData(contactForm);
-    console.log(formData)
-    fetch('/', {
-      method: 'POST',
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString()
-    }).then((res) => console.log('Form successfully submitted', res.json))
-      .catch(error => alert(error.message))
-  }
 </script>
 
 <h1>Contact</h1>
@@ -30,7 +18,7 @@
 
 <Callout>Any suggestions, corrections, questions or greetings are welcome below. Find me on <a href="https://www.twitter.com/lenny_ochanda">Twitter</a> for the quickest reply.</Callout>
 
-<form id="contact" on:submit|preventDefault={ handleSubmit } name="contact" method="POST" data-netlify="true">
+<form id="contact" name="contact" method="POST" netlify data-netlify="true" netlify-honeypot="bot-field">
   <div class="form-section">
     <label for="name">Name</label>
     <input type="text" id="name" placeholder="Name" />
