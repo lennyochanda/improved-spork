@@ -69,9 +69,11 @@ img {
     text-transform: uppercase;
     font-family: $primaryFont;
     font-weight: bold;
+    border-radius: .15rem;
 
     + li {
       margin-left: 0.5rem;
+      margin-top: 0.5rem;
     }
   }
 }
@@ -91,4 +93,8 @@ img {
       font-weight: normal;
     }
   }
+}
+
+article {
+  margin-left: .2rem;
 }
