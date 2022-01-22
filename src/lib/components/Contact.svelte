@@ -8,6 +8,7 @@
   const handleSubmit = (e) => {
     let contactForm = document.getElementById('contact');
     let formData = new FormData(contactForm);
+    console.log(formData)
     fetch('/', {
       method: 'POST',
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
