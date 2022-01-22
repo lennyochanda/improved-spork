@@ -22,6 +22,8 @@
 <script>
 	export let posts
   export let category
+
+  import PostCard from '$lib/components/PostCard.svelte'
 </script>
 
 
@@ -36,16 +38,7 @@
   <ul class="posts-list">
     {#each posts as post}
       <li>
-        <a href="{post.slug}">
-          <img src={post.coverImage} alt=""/>
-        </a>
-        <h2>
-          <a href="{post.slug}">
-            {post.title}
-          </a>
-        </h2>
-
-        <p>{post.excerpt}</p>
+        <PostCard slug={ post.slug } date={ post.date } image={ post.coverImage } title={ post.title } excerpt={ post.excerpt } categories={ post.categories } />
       </li>
     {/each}
   </ul>
