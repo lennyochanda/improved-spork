@@ -26,7 +26,7 @@
 <ul class="posts-list">
   {#each posts as post}
     <li>
-			<PostCard slug={ post.slug } date={ post.date } image={ post.coverImage } title={ post.title } excerpt={ post.excerpt } categories={ post.categories } />
+			<PostCard slug={ post.slug } date={ post.date } image={ post.coverImage } title={ post.title } excerpt={ post.excerpt } />
     </li>
   {/each}
 </ul>

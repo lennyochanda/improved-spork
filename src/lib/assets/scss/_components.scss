@@ -1,8 +1,8 @@
 .callout {
   background: $lightAccent;
   padding: 2rem;
-  width: calc(100% + 4rem);
-  margin: 2rem 0 2rem -2rem;
+  width: calc(100% + 2rem);
+  margin: 2rem 0 0rem -1rem;
   font-size: 1.125rem;
   font-style: italic;
   border-radius: 0.125rem;
@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   margin: 1rem auto;
-  box-shadow: 0 3px 7px -1px rgba(#000, .1);
+  box-shadow: 0 5px 8px -3px rgba(#000, .2), 0 5px 8px -3px rgba(#000, .1);
   margin-bottom: 1.6%;
   background: $color_white;
   line-height: 1.4;
@@ -35,6 +35,7 @@
     position: relative;
     z-index: 0;
     height: 100px;
+    background: $color_white;
   }
   .photo {
     position: absolute;
@@ -84,7 +85,7 @@
     .read-more {
       text-align: right;
       a {
-        color: $color_prime;
+        color: $accent;
         display: inline-block;
         position: relative;
         text-decoration: none;
@@ -100,7 +101,7 @@
         content: "";
         position: absolute;
         height: 5px;
-        background: $color_prime;
+        background: $accent;
         width: 35px;
         top: -0.75rem;
         border-radius: 3px;
@@ -126,7 +127,7 @@
       &:before {
         transform: skewX(-3deg);
         content: "";
-        background: #fff;
+        background: $color_white;
         width: 30px;
         position: absolute;
         left: -10px;

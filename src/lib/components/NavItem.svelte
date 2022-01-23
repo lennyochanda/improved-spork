@@ -9,9 +9,10 @@
 
 <li>
   <a
-    href={href}
-    class:active={isCurrentPage}
     aria-current={isCurrentPage ? 'page' : false}
+    class:active={isCurrentPage}
+    href={href}
+    sveltekit:prefetch
   >
     <slot />
   </a>
