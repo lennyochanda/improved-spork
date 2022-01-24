@@ -69,9 +69,16 @@ textarea {
   color: $background;
   h1 {
     color: inherit;
+    text-align: center;
   }
   ul {
-    list-style-type: circle;
+    list-style-type: none;
+    display: inline-flex;
+    padding: 0;
+
+    li {
+      margin-right: 1rem;
+    }
   }
   a {
     text-decoration: none;
@@ -85,7 +92,7 @@ textarea {
     background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ij48cGF0aCBkPSJNOSAyTDkgMyAxMi4zIDMgNiA5LjMgNi43IDEwIDEzIDMuNyAxMyA3IDE0IDcgMTQgMlpNNCA0QzIuOSA0IDIgNC45IDIgNkwyIDEyQzIgMTMuMSAyLjkgMTQgNCAxNEwxMCAxNEMxMS4xIDE0IDEyIDEzLjEgMTIgMTJMMTIgNyAxMSA4IDExIDEyQzExIDEyLjYgMTAuNiAxMyAxMCAxM0w0IDEzQzMuNCAxMyAzIDEyLjYgMyAxMkwzIDZDMyA1LjQgMy40IDUgNCA1TDggNSA5IDRaIi8+PC9zdmc+) no-repeat;
     background-size: contain;
     display: inline-block;
-    vertical-align: center;
+    vertical-align: baseline;
   }
   P {
     font-weight: bold;

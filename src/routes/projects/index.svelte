@@ -1,16 +1,18 @@
+<script context="module">
+	export async function load({ fetch }) {
+		const res = await fetch(`/api/projects.json`)
+		const { projects } = await res.json()
+
+		return {
+			props: { projects }
+		}
+	}
+</script>
+
 <script>
 	import ProjectCard from '$lib/components/ProjectCard.svelte'
 
-	const projects = [
-    {
-      alt: 'Taarifa Digital website screenshots',
-      coverImage: '/images/projects/taarifa.jpeg',
-      description: 'An independent online platform for Kenyan Trending news in Entertainment, Politics, Lifestyle and Business. It is built with sveltekit and styled with TailwindCSS',
-      stack: ['Sveltekit', 'TailwindCSS'],
-      title: 'Taarifa Digital',
-      url: 'https://taarifa-digital.vercel.app',
-    },
-  ];
+	export let projects
 </script>
 
 <div class="project">
