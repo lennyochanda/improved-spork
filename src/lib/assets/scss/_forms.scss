@@ -8,8 +8,8 @@ input[type=submit] {
   padding: 0.25rem 1rem;
   color: $accent;
   font-weight: bold;
-  border: $color_white;
-  border-radius: 0.125rem;
+  border: 3px solid $accent;
+  border-radius: 0.25rem;
   background: $background;
   margin: 2rem 0 0;
   display: block;
@@ -63,10 +63,11 @@ textarea {
 }
 
 .contact {
-  padding: 2rem;
+  padding: 1rem;
+  box-shadow: 0 5px 8px -3px rgba(#000, .2), 0 5px 8px -3px rgba(#000, .1);
   margin-top: 2rem;
-  background: $dark;
-  color: $background;
+  background: $background;
+  color: $darker;
   h1 {
     color: inherit;
     text-align: center;
