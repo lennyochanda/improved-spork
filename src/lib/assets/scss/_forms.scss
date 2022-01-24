@@ -6,7 +6,7 @@ button,
 input[type=submit] {
   font-size: 1rem;
   padding: 0.25rem 1rem;
-  color: $darker;
+  color: $accent;
   font-weight: bold;
   border: $color_white;
   border-radius: 0.125rem;
@@ -19,6 +19,7 @@ input[type=submit] {
   &:hover,
   &:focus {
     background: $accent;
+    color: $background;
   }
 }
 
@@ -48,7 +49,7 @@ fieldset {
 }
 
 ::placeholder {
-  color: darken($lightAccent, 30%);
+  color: lighten($accent, 5%);
 }
 
 textarea {
@@ -64,13 +65,16 @@ textarea {
 .contact {
   padding: 2rem;
   margin-top: 2rem;
-  background: linear-gradient(to bottom, $darker, $accent, $darker);
-  color: $background; 
+  background: $dark;
+  color: $background;
   h1 {
     color: inherit;
   }
   ul {
     list-style-type: circle;
+  }
+  a {
+    text-decoration: none;
   }
   a[target="_blank"]::after {
     content: "";
@@ -82,6 +86,9 @@ textarea {
     background-size: contain;
     display: inline-block;
     vertical-align: center;
+  }
+  P {
+    font-weight: bold;
   }
 }
 

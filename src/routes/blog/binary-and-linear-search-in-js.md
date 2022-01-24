@@ -1,7 +1,7 @@
 ---
-title: "Implementing Linear and Binary Search Algorithms in JavaScript."
-date: "2021-12-11"
-updated: "2021-12-11"
+title: "Binary and Linear Search Algorithms in JavaScript."
+date: "Monday 13th Dec, 2021"
+updated: "Monday 24th Jan, 2022"
 categories: 
   - "Searching"
   - "Algorithms"
@@ -9,6 +9,7 @@ categories:
   - "Linear Search"
   - "Binary Search"
 coverImage: "/images/blog/computer.jpeg"
+alt: "Computer"
 coverWidth: 16
 coverHeight: 9
 excerpt: "Implementing two simple Searching algorithms on JavaScript arrays, Linear and Binary Search."
@@ -22,6 +23,8 @@ excerpt: "Implementing two simple Searching algorithms on JavaScript arrays, Lin
 >
 > ***[\-Wikipedia](https://en.m.wikipedia.org/wiki/Algorithm).*** 
 
+### Intro
+
 Hello and Welcome. In this post we will look at arrays and learn a little about searching them. JavaScript comes with a number of methods to be used on arrays. Some of these methods i.e sort, forEach and map are more sophisticated implementations of the algorithms we will look at so you can research the topic further if you haven't. 
 
 ### Searching
@@ -29,10 +32,10 @@ Hello and Welcome. In this post we will look at arrays and learn a little about 
 Right away we will define searching.It means iterating over the elements of an array in order to retrieve data from it.
 When it comes to arrays there are different techniques for searching depending on whether the array is sorted or not.
 
-1. Linear Search- used on both sorted and none sorted arrays.
-2. Binary Search- used on sorted arrays.
+- Linear Search- used on both sorted and unsorted arrays.
+- Binary Search- used on sorted arrays.
 
-### Linear Search
+#### Linear Search
 
 An example of an implementation of linear search is shown below:
 
@@ -59,7 +62,7 @@ The time complexity for a linear search algorithm is O(n) in the worst case. Wha
 
 We can use a linear search when we have an array of unsorted data because when the data is sorted a binary search would be faster. Let's talk about binary search next.
 
-**Binary Search**
+#### Binary Search
 
 A binary search works by cutting an array in half at a middle value and checking whether the value being searched for is greater than the middle value. If it is less than the middle value, the search only continues in the lower half, but if it is more, the search happens in the upper half. This is repeated until either the value is found or the possible values are exhausted.
 
@@ -74,7 +77,7 @@ An example of a binary search in the matrix could be finding a word in a diction
 4. Repeat steps 2 & 3 until you find "tomato" or the remaining words can not be narrowed down further.
 </Callout>
 
-An implementation for a binary search on an array of numbers is shown below:
+An example of binary search on a number array:
 
 ```javascript
 const numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
@@ -102,4 +105,9 @@ As seen in the example, the algorithm keeps dividing the array into two halves a
 
 In the worst case, binary search has a perfomance of O(log n), also called logarithmic time where n is the number of elements in the array. This means that the running time grows in proportion to the logarithm of the input size. i.e if searching through 10 names takes say 1 second at most, 100 names take 2 seconds and 1000 names take 3 seconds, this is an example of logarithmic time.
 
-We have reached the end of the lesson. Thanks for going through the article. I hope you learned something new today. In case of any questions or corrections please reach out to me on Twitter.
+### Summary
+
+We have looked at two searching algorithms that we can use on arrays in JavaScript: Linear and Binary Search. Binary Search is used on sorted arrays while Linear Search can be used for both sorted and unsorted arrays.
+When an array is sorted, binary search will have a better perfomance compared to linear search.
+
+We have reached the end of the lesson. Thanks for going through the article. In case of any questions or corrections please shoot me a message on the [about page](/about).

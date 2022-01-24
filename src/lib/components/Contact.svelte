@@ -11,7 +11,7 @@
 <div class="contact">
   <h1>Contact Me</h1>
 
-  <p>You can find me on the following social accounts:</p>
+  <p>Social Accounts:</p>
 
   <ul>
     <li><a href="https://www.github.com/dak-384" target="_blank">Github</a></li>

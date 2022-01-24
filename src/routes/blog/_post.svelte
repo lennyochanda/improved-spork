@@ -4,6 +4,7 @@
   // These are pulled from the frontmatter of the current post
   export let title
   export let excerpt
+  export let alt
   export let coverImage = ''
   export let coverWidth = ''
   export let coverHeight = ''
@@ -14,7 +15,7 @@
 
 
 <svelte:head>
-  <!-- Be sure to add your image files and un-comment the lines below -->
+  <!-- Be sure to add your image files below -->
   <title>{title}</title>
   <meta data-key="description" name="description" content="{excerpt}">
   <meta property="og:type" content="article" />
@@ -34,7 +35,7 @@
   <img
     class="cover-image"
     src="{coverImage}"
-    alt=""
+    alt="{alt}"
     style="aspect-ratio: {coverWidth} / {coverHeight};"
     width={coverWidth}
     height={coverHeight}

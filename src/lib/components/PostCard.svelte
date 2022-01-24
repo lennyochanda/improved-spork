@@ -1,5 +1,5 @@
 <script>
-	export let author, date, categories, excerpt, image, slug, title
+	export let date, excerpt, image, slug, title
 </script>
 
 <div class="blog-card">
