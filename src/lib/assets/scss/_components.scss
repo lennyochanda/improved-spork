@@ -8,6 +8,44 @@
   border-radius: 0.125rem;
 }
 
+.project-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 1rem auto;
+  box-shadow: 0 5px 8px -3px rgba(#000, .2), 0 5px 8px -3px rgba(#000, .1);
+  padding: 1.5rem;
+  background: $color_white;
+  font-family: sans-serif;
+  overflow: hidden;
+  z-index: 0;
+  h3 {
+    margin: .2rem;
+    a {
+      color: inherit;
+    }
+  }
+  a[target="_blank"] {
+    color: $accent;
+    font-weight: bold;
+    text-decoration: none;
+    margin: .25rem .8rem;
+  }
+  a {
+    text-align: center;
+    margin: .25rem .8rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  a.stack {
+    color: $darker;
+    background: $lightAccent;
+    padding: .125rem .2rem;
+    margin: .2rem;
+    border-radius: .5rem;
+  }
+}
+
 .blog-card {
   display: flex;
   flex-direction: column;
@@ -17,7 +55,6 @@
   background: $color_white;
   line-height: 1.4;
   font-family: sans-serif;
-  border-radius: 5px;
   overflow: hidden;
   z-index: 0;
   a {
