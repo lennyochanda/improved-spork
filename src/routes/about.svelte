@@ -18,7 +18,7 @@
 		while obtaining my Bachelor's Degree in Commerce(Finance Option). I have since completed the
 		Foundations part of <em>The Odin Project</em> which covered <strong>HTML, CSS and JS</strong>
 		and recently started building projects, some of which you may find in the
-		<a href="/projects">Projects page</a>.
+		<a sveltekit:prefetch href="/projects">Projects page</a>.
 	</p>
 
 	<p>

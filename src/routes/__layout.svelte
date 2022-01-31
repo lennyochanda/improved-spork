@@ -25,17 +25,6 @@
 	 * such as adding page transitions.)
 	 **/
 	$: currentPage.set(path);
-
-	/**
-	 * This pre-fetches all routes on the site in the background for faster loading.
-	 * It may be better to use `prefetch()` for specific routes instead if there are
-	 * lots and lots of routes, however, to avoid wasting user data.
-	 *
-	 * https://kit.svelte.dev/docs#modules-$app-navigation
-	 **/
-	onMount(() => {
-		prefetchRoutes();
-	});
 </script>
 
 <!-- This markup is used on every page in the site. The <slot> is where the page's actual contents will show up. The dynamic path adds classes based on the current route. -->

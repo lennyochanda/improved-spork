@@ -17,7 +17,7 @@
 			{excerpt}
 		</p>
 		<p class="read-more">
-			<a href={slug}>Read More</a>
+			<a sveltekit:prefetch href={slug}>Read More</a>
 		</p>
 	</div>
 </div>
