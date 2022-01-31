@@ -1,19 +1,18 @@
 <script>
-  import { currentPage } from '$lib/assets/js/store';
+	import { currentPage } from '$lib/assets/js/store';
 
-  export let href;
+	export let href;
 
-  $: isCurrentPage = $currentPage.startsWith(href)
+	$: isCurrentPage = $currentPage.startsWith(href);
 </script>
 
-
 <li>
-  <a
-    aria-current={isCurrentPage ? 'page' : false}
-    class:active={isCurrentPage}
-    href={href}
-    sveltekit:prefetch
-  >
-    <slot />
-  </a>
+	<a
+		aria-current={isCurrentPage ? 'page' : false}
+		class:active={isCurrentPage}
+		{href}
+		sveltekit:prefetch
+	>
+		<slot />
+	</a>
 </li>

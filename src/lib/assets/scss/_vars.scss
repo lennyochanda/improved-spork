@@ -1,27 +1,25 @@
 // Colors
-$accent: #E63946;
-$background: #FFE;
-$lightAccent: #A8DADC;
-$dark: #457B9D;
-$darker: #1D3557;
+$accent: #e63946;
+$background: #ffe;
+$lightAccent: #a8dadc;
+$dark: #457b9d;
+$darker: #1d3557;
 
-$ink: #2F3948;
+$ink: #2f3948;
 $white: #fff;
 $black: #000;
 
-$color_white: #FFD;
+$color_white: #ffd;
 $color_prime: #5ad67d;
 $color_grey: #e2e2e2;
 $color_grey_dark: #a2a2a2;
 
 $gradient: linear-gradient(to left, $dark, $darker);
 
-
 // Fonts
-$accentFont: 'Source Serif Pro', Georgia, Times, serif; 
+$accentFont: 'Source Serif Pro', Georgia, Times, serif;
 $primaryFont: 'Source Sans Pro', sans-serif;
 $codeFont: 'Fira Code', monospace;
-
 
 // Breakpoints
 $xsMin: 600px;

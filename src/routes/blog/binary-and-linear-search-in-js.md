@@ -1,31 +1,31 @@
 ---
-title: "Binary and Linear Search Algorithms in JavaScript."
-date: "Monday 13th Dec, 2021"
-updated: "Monday 24th Jan, 2022"
-categories: 
-  - "Searching"
-  - "Algorithms"
-  - "Snippets"
-  - "Linear Search"
-  - "Binary Search"
-coverImage: "/images/blog/computer.jpeg"
-alt: "Computer"
+title: 'Binary and Linear Search Algorithms in JavaScript.'
+date: 'Monday 13th Dec, 2021'
+updated: 'Monday 24th Jan, 2022'
+categories:
+  - 'Searching'
+  - 'Algorithms'
+  - 'Snippets'
+  - 'Linear Search'
+  - 'Binary Search'
+coverImage: '/images/blog/computer.jpeg'
+alt: 'Computer'
 coverWidth: 16
 coverHeight: 9
-excerpt: "Implementing two simple Searching algorithms on JavaScript arrays, Linear and Binary Search."
+excerpt: 'Implementing two simple Searching algorithms on JavaScript arrays, Linear and Binary Search.'
 ---
 
 <script>
   import Callout from '$lib/components/Callout.svelte';
 </script>
 
-> ***An algorithm is a finite sequence of well-defined instructions, typically used to solve a class of specific problems or to perform a computation.***
+> **_An algorithm is a finite sequence of well-defined instructions, typically used to solve a class of specific problems or to perform a computation._**
 >
-> ***[\-Wikipedia](https://en.m.wikipedia.org/wiki/Algorithm).*** 
+> **_[\-Wikipedia](https://en.m.wikipedia.org/wiki/Algorithm)._**
 
 ### Intro
 
-Hello and Welcome. In this post we will look at arrays and learn a little about searching them. JavaScript comes with a number of methods to be used on arrays. Some of these methods i.e sort, forEach and map are more sophisticated implementations of the algorithms we will look at so you can research the topic further if you haven't. 
+Hello and Welcome. In this post we will look at arrays and learn a little about searching them. JavaScript comes with a number of methods to be used on arrays. Some of these methods i.e sort, forEach and map are more sophisticated implementations of the algorithms we will look at so you can research the topic further if you haven't.
 
 ### Searching
 
@@ -40,18 +40,18 @@ When it comes to arrays there are different techniques for searching depending o
 An example of an implementation of linear search is shown below:
 
 ```javascript
-const names = [ "Thomas", "Antony", "Lisa", "Loice" ]
+const names = ['Thomas', 'Antony', 'Lisa', 'Loice'];
 
-function linearSearch (array, n) {
-  for (let index = 0; index < array.length; index++) {
-    if ( array[index] == n ) {
-      return index
-    }
-  }
-  return false
+function linearSearch(array, n) {
+	for (let index = 0; index < array.length; index++) {
+		if (array[index] == n) {
+			return index;
+		}
+	}
+	return false;
 }
 
-console.log(linearSearch(names, "Thomas"))
+console.log(linearSearch(names, 'Thomas'));
 ```
 
 We define a function linearSearch which takes in an array and the name we want to search as its arguments. If the name is found, we return it's index in the array.
@@ -66,7 +66,7 @@ We can use a linear search when we have an array of unsorted data because when t
 
 A binary search works by cutting an array in half at a middle value and checking whether the value being searched for is greater than the middle value. If it is less than the middle value, the search only continues in the lower half, but if it is more, the search happens in the upper half. This is repeated until either the value is found or the possible values are exhausted.
 
-An example of a binary search in the matrix could be finding a word in a dictionary. Dictionaries are sorted alphabetically. This means that if we want to find a word, for example tomato, we don't have to check every single word in the dictionary. It would be slow, redundant and just painful. We can search for the word tomato by following these steps: 
+An example of a binary search in the matrix could be finding a word in a dictionary. Dictionaries are sorted alphabetically. This means that if we want to find a word, for example tomato, we don't have to check every single word in the dictionary. It would be slow, redundant and just painful. We can search for the word tomato by following these steps:
 
 <Callout>
 1. Set the high and lowest possible values i.e last and first word in the dictionary.
@@ -80,25 +80,26 @@ An example of a binary search in the matrix could be finding a word in a diction
 An example of binary search on a number array:
 
 ```javascript
-const numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function binarySearch(array, n) {
-	let lowIndex = 0, highIndex = array.length-1
+	let lowIndex = 0,
+		highIndex = array.length - 1;
 
-	while(lowIndex <= highIndex) {
-		let midIndex = Math.floor((lowIndex + highIndex) / 2)
+	while (lowIndex <= highIndex) {
+		let midIndex = Math.floor((lowIndex + highIndex) / 2);
 		if (array[midIndex] == n) {
-			return midIndex
+			return midIndex;
 		} else if (n > array[midIndex]) {
-			lowIndex = midIndex
+			lowIndex = midIndex;
 		} else {
-			highIndex = midIndex
+			highIndex = midIndex;
 		}
 	}
-	return 0
+	return 0;
 }
 
-console.log(binarySearch(numbers, 5))
+console.log(binarySearch(numbers, 5));
 ```
 
 As seen in the example, the algorithm keeps dividing the array into two halves and comparing until a solution is found. With each iteration of our while loop, the number of possible elements is cut by half. This is basically "Divide and Conquer" with extra steps. For large arrays, binary search is faster than linear search.

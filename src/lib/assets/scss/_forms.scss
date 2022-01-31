@@ -1,107 +1,110 @@
 form {
-  margin: 2rem 0;
+	margin: 2rem 0;
 }
 
 button,
-input[type=submit] {
-  font-size: 1rem;
-  padding: 0.25rem 1rem;
-  color: $accent;
-  font-weight: bold;
-  border: 3px solid $accent;
-  border-radius: 0.25rem;
-  background: $background;
-  margin: 2rem 0 0;
-  display: block;
-  width: max-content;
-  transition: background .2s;
+input[type='submit'] {
+	font-size: 1rem;
+	padding: 0.25rem 1rem;
+	color: $accent;
+	font-weight: bold;
+	border: 3px solid $accent;
+	border-radius: 0.25rem;
+	background: $background;
+	margin: 2rem 0 0;
+	display: block;
+	width: max-content;
+	transition: background 0.2s;
 
-  &:hover,
-  &:focus {
-    background: $accent;
-    color: $background;
-  }
+	&:hover,
+	&:focus {
+		background: $accent;
+		color: $background;
+	}
 }
 
 label,
 fieldset {
-  font-weight: bold;
-  display: inline-block;
+	font-weight: bold;
+	display: inline-block;
 }
 
 fieldset {
-  padding: 0;
-  border: 0;
+	padding: 0;
+	border: 0;
 }
 
 input {
-  display: block;
-  font-size: inherit;
-  padding: 0.6rem;
-  border-radius: 0.125rem;
-  width: 100%;
-  accent-color: $accent;
+	display: block;
+	font-size: inherit;
+	padding: 0.6rem;
+	border-radius: 0.125rem;
+	width: 100%;
+	accent-color: $accent;
 }
 
 .form-section,
 fieldset {
-  margin-top: 1.5rem;
+	margin-top: 1.5rem;
 }
 
 ::placeholder {
-  color: lighten($accent, 5%);
+	color: lighten($accent, 5%);
 }
 
 textarea {
-  border-radius: 0.125rem;
-  box-sizing: border-box;
-  font-size: inherit;
-  height: 100px;
-  padding: 0.6rem;
-  resize: none;
-  width: 100%;
+	border-radius: 0.125rem;
+	box-sizing: border-box;
+	font-size: inherit;
+	height: 100px;
+	padding: 0.6rem;
+	resize: none;
+	width: 100%;
 }
 
 .contact {
-  padding: 1rem;
-  box-shadow: 0 5px 8px -3px rgba(#000, .2), 0 5px 8px -3px rgba(#000, .1);
-  margin-top: 2rem;
-  background: $background;
-  color: $darker;
-  h1 {
-    color: inherit;
-    text-align: center;
-  }
-  ul {
-    list-style-type: none;
-    display: inline-flex;
-    padding: 0;
+	padding: 1rem;
+	box-shadow: 0 5px 8px -3px rgba(#000, 0.2), 0 5px 8px -3px rgba(#000, 0.1);
+	margin-top: 2rem;
+	background: $background;
+	color: $darker;
+	h1 {
+		color: inherit;
+		text-align: center;
+	}
+	ul {
+		list-style-type: none;
+		display: inline-flex;
+		padding: 0;
 
-    li {
-      margin-right: 1rem;
-    }
-  }
-  a {
-    text-decoration: none;
-  }
-  P {
-    font-weight: bold;
-  }
+		li {
+			margin-right: 1rem;
+		}
+	}
+	a {
+		text-decoration: none;
+	}
+	P {
+		font-weight: bold;
+	}
 }
 
-input[name=name], input[name=email], textarea[name=message] {
-  background: $background;
-  border: none;
+input[name='name'],
+input[name='email'],
+textarea[name='message'] {
+	background: $background;
+	border: none;
 }
 
-a[target="_blank"]::after {
-  content: "";
-  color: $background;
-  width: 1em;
-  height: 1em;
-  margin: 0 0.05em 0 0.1em;
-  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ij48cGF0aCBkPSJNOSAyTDkgMyAxMi4zIDMgNiA5LjMgNi43IDEwIDEzIDMuNyAxMyA3IDE0IDcgMTQgMlpNNCA0QzIuOSA0IDIgNC45IDIgNkwyIDEyQzIgMTMuMSAyLjkgMTQgNCAxNEwxMCAxNEMxMS4xIDE0IDEyIDEzLjEgMTIgMTJMMTIgNyAxMSA4IDExIDEyQzExIDEyLjYgMTAuNiAxMyAxMCAxM0w0IDEzQzMuNCAxMyAzIDEyLjYgMyAxMkwzIDZDMyA1LjQgMy40IDUgNCA1TDggNSA5IDRaIi8+PC9zdmc+) no-repeat;
-  background-size: contain;
-  display: inline-block;
-  vertical-align: baseline;
+a[target='_blank']::after {
+	content: '';
+	color: $background;
+	width: 1em;
+	height: 1em;
+	margin: 0 0.05em 0 0.1em;
+	background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ij48cGF0aCBkPSJNOSAyTDkgMyAxMi4zIDMgNiA5LjMgNi43IDEwIDEzIDMuNyAxMyA3IDE0IDcgMTQgMlpNNCA0QzIuOSA0IDIgNC45IDIgNkwyIDEyQzIgMTMuMSAyLjkgMTQgNCAxNEwxMCAxNEMxMS4xIDE0IDEyIDEzLjEgMTIgMTJMMTIgNyAxMSA4IDExIDEyQzExIDEyLjYgMTAuNiAxMyAxMCAxM0w0IDEzQzMuNCAxMyAzIDEyLjYgMyAxMkwzIDZDMyA1LjQgMy40IDUgNCA1TDggNSA5IDRaIi8+PC9zdmc+)
+		no-repeat;
+	background-size: contain;
+	display: inline-block;
+	vertical-align: baseline;
 }

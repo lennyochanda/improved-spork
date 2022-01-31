@@ -1,79 +1,84 @@
 html {
-  font-size: 1rem;
-  line-height: 1.6;
+	font-size: 1rem;
+	line-height: 1.6;
 
-  @media (min-width: $smMin) {
-    font-size: 1.125rem;
-  }
+	@media (min-width: $smMin) {
+		font-size: 1.125rem;
+	}
 
-  @media (min-width: $lgMin) {
-    font-size: 1.25rem;
-  }
+	@media (min-width: $lgMin) {
+		font-size: 1.25rem;
+	}
 }
 
 body {
-  font-family: $primaryFont;
-  color: $ink;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: $primaryFont;
+	color: $ink;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 3.5rem 0 1rem;
-  line-height: 1.1;
-  font-family: $accentFont;
-  font-weight: normal;
-  color: $darker;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 3.5rem 0 1rem;
+	line-height: 1.1;
+	font-family: $accentFont;
+	font-weight: normal;
+	color: $darker;
 }
 
 h1 {
-  font-size: 2.4rem;
-  margin-top: 0;
+	font-size: 2.4rem;
+	margin-top: 0;
 
-  @media (min-width: $smMin) {
-    font-size: 3.4rem;
-  }
+	@media (min-width: $smMin) {
+		font-size: 3.4rem;
+	}
 
-  @media (min-width: $lgMin) {
-    font-size: 3.8rem;
-  }
+	@media (min-width: $lgMin) {
+		font-size: 3.8rem;
+	}
 }
 
 h2 {
-  font-size: 1.8rem;
-  
-  @media (min-width: $smMin) {
-    font-size: 2.4rem;
-  }
+	font-size: 1.8rem;
+
+	@media (min-width: $smMin) {
+		font-size: 2.4rem;
+	}
 }
 
 h3 {
-  font-size: 1.8rem;
+	font-size: 1.8rem;
 }
 
 h4 {
-  font-size: 1.6rem;
+	font-size: 1.6rem;
 }
 
 h5 {
-  font-size: 1.35rem;
+	font-size: 1.35rem;
 }
 
 h6 {
-  font-size: 1.1rem;
+	font-size: 1.1rem;
 }
 
 a {
-  color: inherit;
-  text-decoration-thickness: 1px;
-  text-decoration-color: $dark;
+	color: inherit;
+	text-decoration-thickness: 1px;
+	text-decoration-color: $dark;
 }
 
 ul {
-  padding-left: 1.5rem;
-  list-style-type: circle;
+	padding-left: 1.5rem;
+	list-style-type: circle;
 
-  ::marker {
-    color: $accent;
-  }
+	::marker {
+		color: $accent;
+	}
 }

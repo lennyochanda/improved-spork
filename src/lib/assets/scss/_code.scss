@@ -1,23 +1,23 @@
 pre {
-  overflow-y: auto;
-  color: $background;
-  background: $darker;
-  padding: 1rem;
+	overflow-y: auto;
+	color: $background;
+	background: $darker;
+	padding: 1rem;
 }
 
 code {
-  background: $lightAccent;
-  padding: 0.25em 0.5em;
+	background: $lightAccent;
+	padding: 0.25em 0.5em;
 }
 
 pre,
 code {
-  font-family: $codeFont;
-  font-size: 0.8rem;
-  border-radius: .125rem;
+	font-family: $codeFont;
+	font-size: 0.8rem;
+	border-radius: 0.125rem;
 }
 
 pre code {
-  padding: 0;
-  background: transparent;
+	padding: 0;
+	background: transparent;
 }

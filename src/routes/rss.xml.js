@@ -1,35 +1,33 @@
 // IMPORTANT: update all the property values in this `config` object to reflect your site!
 const config = {
-  siteTitle: 'Lenny Ochanda',
-  siteDescription: 'Portfolio website for Lenny Ochanda',
-  mySiteURL: 'lennyochanda.netlify.app',
-  siteLink: 'https://lennyochanda.netlify.app'
-}
-
-export const get = async () => {  
-  const data = await Promise.all(
-    Object.entries(import.meta.glob('./blog/*.md')).map(async ([path, page]) => {
-      const { metadata } = await page()
-      const slug = path.split('/').pop().split('.').shift()
-      console.log(metadata)
-      return { ...metadata, slug }
-    })
-  )
-  .then(posts => {
-    return posts.sort((a, b) => new Date(b.date) - new Date(a.date))
-  })
-
-  const body = render(data)
-  const headers = {
-    'Cache-Control': `max-age=0, s-max-age=${600}`,
-    'Content-Type': 'application/xml',
-  };
-  return {
-    body,
-    headers,
-  };
+	siteTitle: 'Lenny Ochanda',
+	siteDescription: 'Portfolio website for Lenny Ochanda',
+	mySiteURL: 'lennyochanda.netlify.app',
+	siteLink: 'https://lennyochanda.netlify.app'
 };
 
+export const get = async () => {
+	const data = await Promise.all(
+		Object.entries(import.meta.glob('./blog/*.md')).map(async ([path, page]) => {
+			const { metadata } = await page();
+			const slug = path.split('/').pop().split('.').shift();
+			console.log(metadata);
+			return { ...metadata, slug };
+		})
+	).then((posts) => {
+		return posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+	});
+
+	const body = render(data);
+	const headers = {
+		'Cache-Control': `max-age=0, s-max-age=${600}`,
+		'Content-Type': 'application/xml'
+	};
+	return {
+		body,
+		headers
+	};
+};
 
 //Be sure to review and replace any applicable content below!
 const render = (posts) => `<?xml version="1.0" encoding="UTF-8" ?>
@@ -40,15 +38,16 @@ const render = (posts) => `<?xml version="1.0" encoding="UTF-8" ?>
 <link>${config.siteLink}</link>
 <atom:link href="https://${config.mySiteURL}/rss.xml" rel="self" type="application/rss+xml"/>
 ${posts
-  .map(
-    (post) => `<item>
+	.map(
+		(post) => `<item>
 <guid isPermaLink="true">https://${config.mySiteURL}/blog/${post.slug}</guid>
 <title>${post.title}</title>
 <link>https://${config.mySiteURL}/blog/${post.slug}</link>
 <description>${post.excerpt}</description>
 <pubDate>${new Date(post.date).toUTCString()}</pubDate>
 </item>`
-  ).join('')}
+	)
+	.join('')}
 </channel>
 </rss>
 `;

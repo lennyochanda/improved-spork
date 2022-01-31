@@ -1,100 +1,100 @@
 header,
 footer {
-  font-family: $primaryFont;
-  padding: 3rem 2rem 2.5rem;
-  
-  a {
-    text-decoration: none;
+	font-family: $primaryFont;
+	padding: 3rem 2rem 2.5rem;
 
-    &.active {
-      font-weight: bold;
-    }
-  }
+	a {
+		text-decoration: none;
 
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 0;
-    margin: 0;
+		&.active {
+			font-weight: bold;
+		}
+	}
 
-    a:hover {
-      text-decoration: underline;
-    }
-  }
+	nav ul {
+		list-style-type: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1.5rem;
+		padding: 0;
+		margin: 0;
 
-  nav li {
-    margin-right: 1em;
-  }
+		a:hover {
+			text-decoration: underline;
+		}
+	}
+
+	nav li {
+		margin-right: 1em;
+	}
 }
 
 header {
-  color: $darker;
+	color: $darker;
 
-  .site-title {
-    @extend h2;
-    line-height: 1;
-    color: inherit;
-    max-width: 32rem;
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-  }
+	.site-title {
+		@extend h2;
+		line-height: 1;
+		color: inherit;
+		max-width: 32rem;
+		text-align: center;
+		margin: 0 auto;
+		display: block;
+	}
 
-  nav ul {
-    text-align: center;
-    margin: 1rem auto 0;
-    padding-top: 0.5rem;
-    border-top: 1px solid $dark;
-    width: max-content;
-  }
+	nav ul {
+		text-align: center;
+		margin: 1rem auto 0;
+		padding-top: 0.5rem;
+		border-top: 1px solid $dark;
+		width: max-content;
+	}
 }
 
 footer {
-  background: $gradient;
-  color: $background;
-  display: grid;
-  grid-template-columns: 1fr 1fr 4fr;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
+	background: $gradient;
+	color: $background;
+	display: grid;
+	grid-template-columns: 1fr 1fr 4fr;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
 
-  p {
-    margin: 0;
-    font-size: 0.8rem;
-  }
+	p {
+		margin: 0;
+		font-size: 0.8rem;
+	}
 
-  nav {
-    display: initial;
-    border-right: 1px solid;
+	nav {
+		display: initial;
+		border-right: 1px solid;
 
-    ul {
-      display: initial;
+		ul {
+			display: initial;
 
-      li + li {
-        margin-top: 0.5rem;
-      }
-    }
-  }
+			li + li {
+				margin-top: 0.5rem;
+			}
+		}
+	}
 }
 
 .skip-to-content-link {
-  position: absolute;
-  top: -6rem;
-  left: 0;
-  padding: .5em;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3rem;
-  background: $accent;
+	position: absolute;
+	top: -6rem;
+	left: 0;
+	padding: 0.5em;
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 3rem;
+	background: $accent;
 
-  &:focus {
-    transform: translateY(6rem);
-    opacity: 1;
-    z-index: 11;
-  }
+	&:focus {
+		transform: translateY(6rem);
+		opacity: 1;
+		z-index: 11;
+	}
 }
