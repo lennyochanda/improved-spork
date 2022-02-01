@@ -30,9 +30,9 @@
 		My journey into web development began in 2020 when a friend introduced me to HTML and the W3C
 		website. I went on to learn HTML and CSS, learnt <strong>C</strong> and practised with
 		<strong>Python</strong>
-		until February 2021 when I decided that I wanted to be a full stack web developer, concurrently
-		while obtaining my Bachelor's Degree in Commerce(Finance Option). I have since completed the
-		Foundations part of <em>The Odin Project</em> which covered <strong>HTML, CSS and JS</strong>
+		until February 2021 when I decided that I wanted to be a full stack web developer, concurrently while
+		obtaining my Bachelor's Degree in Commerce(Finance Option). I have since completed the Foundations
+		part of <em>The Odin Project</em> which covered <strong>HTML, CSS and JS</strong>
 		and recently started building projects, some of which you may find in the
 		<a sveltekit:prefetch href="/projects">Projects page</a>.
 	</p>

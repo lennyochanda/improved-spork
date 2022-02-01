@@ -1,4 +1,3 @@
-
 <!-- This is a template file that renders each individual markdown post inside src/routes/blog/ -->
 <script>
 	// These are pulled from the frontmatter of the current post
@@ -11,7 +10,7 @@
 	export let date = '';
 	export let updated = '';
 	export let categories = [];
-	export let site_name = 'https://www.lennyochanda.netlify.app'
+	export let site_name = 'https://www.lennyochanda.netlify.app';
 	import { currentPage } from '$lib/assets/js/store';
 </script>
 
@@ -27,7 +26,7 @@
 	<meta property="og:image" content={coverImage} />
 	<meta property="og:image:width" content={coverWidth} />
 	<meta property="og:image:height" content={coverHeight} />
-	
+
 	<!--Twitter-->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:description" content={excerpt} />
