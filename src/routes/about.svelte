@@ -1,6 +1,22 @@
 <script>
 	import Contact from '$lib/components/Contact.svelte';
+	import { currentPage } from '$lib/assets/js/store';
 </script>
+
+<svelte:head>
+	<!-- Be sure to add your image files below -->
+	<title>About</title>
+	<meta data-key="description" name="description" content="About" />
+	<meta property="og:url" content={currentPage} />
+	<meta property="og:type" content="profile" />
+	<meta property="og:title" content="About" />
+	<meta property="og:description" content="About Lenny Ochanda" />
+	
+	<!--Twitter-->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@lenny_ochanda" />
+	<meta name="twitter:creator" content="@lenny_ochanda" />
+</svelte:head>
 
 <div class="about">
 	<h2>About</h2>

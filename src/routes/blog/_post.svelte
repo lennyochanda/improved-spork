@@ -1,3 +1,4 @@
+
 <!-- This is a template file that renders each individual markdown post inside src/routes/blog/ -->
 <script>
 	// These are pulled from the frontmatter of the current post
@@ -10,27 +11,28 @@
 	export let date = '';
 	export let updated = '';
 	export let categories = [];
+	export let site_name = 'https://www.lennyochanda.netlify.app'
+	import { currentPage } from '$lib/assets/js/store';
 </script>
 
 <svelte:head>
 	<!-- Be sure to add your image files below -->
 	<title>{title}</title>
 	<meta data-key="description" name="description" content={excerpt} />
+	<meta property="og:site_name" content={site_name} />
+	<meta property="og:url" content={currentPage} />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={title} />
-	<meta name="twitter:title" content={title} />
 	<meta property="og:description" content={excerpt} />
-	<meta name="twitter:description" content={excerpt} />
-	<meta
-		property="og:image"
-		content={`https://lennyochanda.netlify.app/images/blog/${coverImage}`}
-	/>
+	<meta property="og:image" content={coverImage} />
 	<meta property="og:image:width" content={coverWidth} />
 	<meta property="og:image:height" content={coverHeight} />
-	<meta
-		name="twitter:image"
-		content={`https://lennyochanda.netlify.app/images/blog/${coverImage}`}
-	/>
+	
+	<!--Twitter-->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:description" content={excerpt} />
+	<meta name="twitter:site" content="@lenny_ochanda" />
+	<meta name="twitter:creator" content="@lenny_ochanda" />
 </svelte:head>
 
 <article class="post">

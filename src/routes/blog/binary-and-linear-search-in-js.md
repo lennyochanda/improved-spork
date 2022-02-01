@@ -8,10 +8,10 @@ categories:
   - 'Snippets'
   - 'Linear Search'
   - 'Binary Search'
-coverImage: '/images/blog/computer.jpeg'
+coverImage: 'https://ik.imagekit.io/lennyochanda/postImages/binary-and-linear-search-javascript/binary-and-linear-search-animation_nZrbjSJgN.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1643711324419'
 alt: 'Computer'
-coverWidth: 16
-coverHeight: 9
+coverWidth: 600
+coverHeight: 400
 excerpt: 'Implementing two simple Searching algorithms on JavaScript arrays, Linear and Binary Search.'
 ---
 
