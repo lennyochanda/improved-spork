@@ -31,7 +31,7 @@ export const get = async (args) => {
 				return posts;
 			})
 			.then((posts) => {
-				return posts.map((post) => ({
+				return posts.reverse().map((post) => ({
 					title: post.title,
 					slug: post.slug,
 					excerpt: post.excerpt,
