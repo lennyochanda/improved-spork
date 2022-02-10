@@ -12,7 +12,7 @@
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	margin: 1rem auto;
+	margin: .25rem auto;
 	box-shadow: 0 5px 8px -3px rgba(#000, 0.2), 0 5px 8px -3px rgba(#000, 0.1);
 	padding: 1.5rem;
 	background: $color_white;
@@ -49,9 +49,9 @@
 .blog-card {
 	display: flex;
 	flex-direction: column;
-	margin: 1rem auto;
+	margin-top: 0;
+	margin: -3rem auto;
 	box-shadow: 0 5px 8px -3px rgba(#000, 0.2), 0 5px 8px -3px rgba(#000, 0.1);
-	margin-bottom: 1.6%;
 	background: $color_white;
 	line-height: 1.4;
 	font-family: sans-serif;

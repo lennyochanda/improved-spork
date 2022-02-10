@@ -11,7 +11,6 @@ export const get = async () => {
 		Object.entries(import.meta.glob('./blog/*.md')).map(async ([path, page]) => {
 			const { metadata } = await page();
 			const slug = path.split('/').pop().split('.').shift();
-			console.log(metadata);
 			return { ...metadata, slug };
 		})
 	).then((posts) => {
